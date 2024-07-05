@@ -1,0 +1,12 @@
+# "org" ensures this Service is used with the correct Serverless Framework Access Key.
+org: fernandes
+service: nodejs-aws-lambda
+provider:
+  name: aws
+  runtime: nodejs18.x
+functions:
+  app:
+    handler: dist/index.handler
+    events:
+      - http: ANY /
+      - http: ANY /{proxy+}
