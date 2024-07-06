@@ -1,6 +1,6 @@
 # "org" ensures this Service is used with the correct Serverless Framework Access Key.
 org: fernandes
-service: nodejs-aws-lambda
+service: consumer-lambda
 provider:
   name: aws
   runtime: nodejs18.x
